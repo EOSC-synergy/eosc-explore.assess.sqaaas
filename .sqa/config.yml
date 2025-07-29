@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://code-repo.d4science.org/MaDgIK/eosc-explore
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.7
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       code-repo.d4science.org/MaDgIK/eosc-explore git:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-ivory-owl.sh
-        container: qc.acc_silly-linen-buffalo
+        - /usr/bin/env sh .sqa/script.lanky-teal-dogfish.sh
+        container: qc.acc_thirsty-purple-snake
   QC.Doc:
     repos:
       code-repo.d4science.org/MaDgIK/eosc-explore find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-russet-tiger.sh
-        container: qc.doc_bluesy-olive-maltese
+        - /usr/bin/env sh .sqa/script.droopy-corn-dhole.sh
+        container: qc.doc_freaky-yellow-sponge
       code-repo.d4science.org/MaDgIK/eosc-explore git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-chestnut-grasshopper.sh
-        container: qc.doc_jumpy-orchid-foxhound
+        - /usr/bin/env sh .sqa/script.wimpy-carmine-squirrel.sh
+        container: qc.doc_ready-chartreuse-cougar
       code-repo.d4science.org/MaDgIK/eosc-explore markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-fuchsia-tortoise.sh
-        container: qc.doc_pasty-chocolate-loon
+        - /usr/bin/env sh .sqa/script.chewy-turquoise-dingo.sh
+        container: qc.doc_hazy-tangerine-abyssinian
   QC.Lic:
     repos:
       code-repo.d4science.org/MaDgIK/eosc-explore licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-dandelion-jackal.sh
-        container: qc.lic_surly-myrtle-civet
+        - /usr/bin/env sh .sqa/script.gloppy-corn-akbash.sh
+        container: qc.lic_cozy-pear-chin
   QC.Sty:
     repos:
       code-repo.d4science.org/MaDgIK/eosc-explore jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-lavender-impala.sh
-        container: qc.sty_breezy-emerald-salamander
+        - /usr/bin/env sh .sqa/script.flabby-tomato-ibis.sh
+        container: qc.sty_tasty-goldenrod-wasp
   QC.Ver:
     repos:
       code-repo.d4science.org/MaDgIK/eosc-explore get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-auburn-russel.sh
-        container: qc.ver_crabby-cinnamon-crane
-timeout: 1800
+        - /usr/bin/env sh .sqa/script.tasty-platinum-gecko.sh
+        container: qc.ver_seedy-brown-gorilla
+timeout: 5400
